@@ -9,7 +9,11 @@
 ##can do:
 
 [min]()
+
 [max]()
+
 [number]()
+
 [print]()
+
 [comment]()
