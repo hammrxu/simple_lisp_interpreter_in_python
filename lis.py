@@ -139,21 +139,17 @@ def eval(expr, environment):
                 _else = None
                 if len(expr) == 4:
                     _else = expr[3]
-
                 if eval(condition, environment) != False:
                     return eval(then, environment)
                 elif _else is not None:
                     return eval(_else, environment)
-
             elif expr[0].value == 'define':
                 name = expr[1].value
                 value = eval(expr[2], environment)
                 environment[name] = value
-
             elif expr[0].value == 'begin':
                 for ex in expr[1:]:
                     eval(ex, environment)
-
             else:
                 fn = eval(expr[0], environment)
                 args = [eval(arg, environment) for arg in expr[1:]]
@@ -183,9 +179,7 @@ base_environment = {
     '=': operator.eq,
     '!=': operator.ne,
     'nil': None,
-    # 'print': lambda x: sys.stdout.write(str(x) + '\n'),
-    'print': lambda x: sys.stdout.write(str(x) + '\n'),
-    'write-line': lambda x: sys.stdout.write(str(x) + '\n'),
+    'write-line':lambda x: sys.stdout.write(str(x) + '\n'),
     'abs':     abs,
     'append':  operator.add,  
     'apply':   apply,
@@ -223,10 +217,11 @@ def main():
             if new_line:
                 foutput += (new_line + "\n")
         contents = foutput
-        # print(contents)
+        print(contents)
         parsed = parse(tokenize(contents))
         # print(parsed)
         eval(parsed, base_environment)
+        print(eval(parsed, base_environment))
 
 if __name__ == '__main__':
     main()
