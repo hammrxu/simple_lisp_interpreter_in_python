@@ -9,10 +9,10 @@ Input one line of Lisp code, we give back you the result.
 
 [min](/min.lisp)
 
-[max]()
+[max](/max.lisp)
 
-[number]()
+[number](/number.lisp)
 
-[print]()
+[print](/print.lisp)
 
-[comment]()
+[comment](/comment.lisp)
