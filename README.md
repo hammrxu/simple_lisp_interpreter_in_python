@@ -1,14 +1,15 @@
-# simple_lisp_interpreter_in_python
-goal for MLH hackthon
+### simple_lisp_interpreter_in_python
 
-Thanks to my teammate Jonny Liu.
+##goal for MLH hackthon
 
-Input one line of Lisp code, we give back you the result.
+##Thanks to my teammate Jonny Liu.
 
-can do:
+##Input one line of Lisp code, we give back you the result.
 
-min
-max
-number
-print
-comment
+##can do:
+
+[min]()
+[max]()
+[number]()
+[print]()
+[comment]()
