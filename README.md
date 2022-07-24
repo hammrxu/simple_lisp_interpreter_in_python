@@ -1,10 +1,5 @@
 # simple_lisp_interpreter_in_python
 
-
-
-## Thanks to my teammate Jonny Liu.
-## this project's goal for MLH hackthon
-
 ## What about this project 
 ### Thanks to my teammate Jonny Liu.
 ### this project's goal for MLH hackthon
